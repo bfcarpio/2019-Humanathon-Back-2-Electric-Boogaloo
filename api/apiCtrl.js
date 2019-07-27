@@ -44,7 +44,7 @@ const apiCtrl = {
         label: req.body.label,
         description: req.body.description,
         phone: req.body.phone,
-        map: req.body.phone,
+        map: req.body.map,
         x: req.body.x,
         y: req.body.y
       });
