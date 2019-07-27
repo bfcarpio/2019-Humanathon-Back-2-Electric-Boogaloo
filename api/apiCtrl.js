@@ -41,12 +41,12 @@ const apiCtrl = {
   async addLocation(req, res) {
     try {
       let result = await schema.Location.create({
-        Label: req.body.label,
-        Description: req.body.description,
-        Phone: req.body.phone,
-        Map: req.body.phone,
-        X: req.body.x,
-        Y: req.body.y
+        label: req.body.label,
+        description: req.body.description,
+        phone: req.body.phone,
+        map: req.body.phone,
+        x: req.body.x,
+        y: req.body.y
       });
       res.status(200).send(result);
     } catch (err) {

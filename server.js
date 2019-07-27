@@ -2,6 +2,7 @@
 const express = require("express");
 const app = express();
 const router = require("./routes");
+const cors = require("cors");
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -11,6 +12,7 @@ app.use(function(req, res, next) {
   );
   next();
 });
+app.options("*", cors());
 
 app.use("/", router);
 
