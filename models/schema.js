@@ -2,12 +2,12 @@ const mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let Location = new Schema({
-  Label: { type: String, required: true },
-  Description: { type: String, required: true },
-  Phone: { type: String, required: true },
-  Map: { type: String, required: true },
-  X: { type: Number, required: true },
-  Y: { type: Number, required: true }
+  label: { type: String, required: true },
+  description: { type: String, required: true },
+  phone: { type: String, required: true },
+  map: { type: String, required: true },
+  x: { type: Number, required: true },
+  y: { type: Number, required: true }
 });
 
 let schemaCtrl = {
